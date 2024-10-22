@@ -112,7 +112,15 @@
                             @endif
                         </div>
                     </div>
-
+                    <div class="row align-items-center justify-content-center mb-3">
+                        <label for="pekerjaan" class="col-3 col-form-label">Pekerjaan</label>
+                        <div class="col-8">
+                            <input type="text" class="form-control border-0" name="pekerjaan" id="pekerjaan" placeholder="Pekerjaan">
+                            @if($errors->has('pekerjaan'))
+                            <small class="text-danger">{{$errors->first('pekerjaan')}}</small>
+                            @endif
+                        </div>
+                    </div>
                     <div class="row justify-content-center mb-4">
                         <div class="col-11">
                             <div class="form-check">
